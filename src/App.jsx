@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar'
 import Detail from './Routes/Detail'
 import Contact from './Routes/Contact'
 import Favs from './Routes/Favs'
+import Footer from './Components/Footer'
 import { ThemeContext } from './Components/ThemeContextProvider'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contacto" element={<Contact />} />
         <Route path="/favs" element={<Favs />} />
       </Routes>
+      <Footer/>
     </div>
   )
 }
