@@ -1,19 +1,31 @@
-import React from "react"
-import Card from "../Components/Card"
-
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
+import React from 'react';
+import Card from '../Components/Card';
 
 const Favs = () => {
+  // Obtener los dentistas destacados almacenados en el localStorage
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+  // Filtrar los favoritos para evitar duplicados basados en el ID del dentista
+  const uniqueFavorites = favorites.filter(
+    (favorite, index, self) =>
+      index === self.findIndex((f) => f.id === favorite.id)
+  );
 
   return (
-    <>
-      <h1>Dentists Favs</h1>
+    <main>
+      <h1>Dentist favs</h1>
       <div className="card-grid">
-        {/* este componente debe consumir los destacados del localStorage */}
-        {/* Deberan renderizar una Card por cada uno de ellos */}
+        {uniqueFavorites.map((favorite) => (
+          <Card
+            key={favorite.id}
+            name={favorite.name}
+            username={favorite.username}
+            id={favorite.id}
+          />
+        ))}
       </div>
-    </>
-  )
-}
+    </main>
+  );
+};
 
-export default Favs
+export default Favs;
