@@ -127,3 +127,29 @@ tr:nth-child(even) {
 .foto{
   margin-right: 1030px;
 }
+.theme-container.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.theme-container.dark {
+  background-color: darkgrey;
+  color: #fff;
+}
+
+.input-field{
+  width: 90%;
+}
+
+.boton {
+  width: 92.5%;
+}
+
+.error-message{
+  color: red;
+}
+
+.imagen-card{
+  height: 100px;
+  width: 80px;
+}
