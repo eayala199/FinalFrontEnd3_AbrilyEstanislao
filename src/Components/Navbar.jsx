@@ -14,7 +14,6 @@ const Navbar = () => {
   return (
     <>
       <nav className={`navbar ${theme}`}>
-        
           <Link to="/home">Home</Link>
           <Link to="/dentist/1">Dentist</Link>
           <Link to="/contacto">Contact</Link>

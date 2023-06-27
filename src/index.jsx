@@ -5,7 +5,6 @@ import App from './App'
 import {BrowserRouter as Router} from 'react-router-dom'
 import ThemeContextProvider from './Components/ThemeContextProvider'
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>

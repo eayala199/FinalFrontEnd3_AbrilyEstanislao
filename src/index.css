@@ -11,7 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.favButton{
+
+.favButton {
   background-color: rgba(136, 136, 136, 0.116);
   padding: 10px;
   border: none;
@@ -19,25 +20,26 @@ code {
   cursor: pointer;
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
 }
 
-a{
+a {
   color: #000;
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
 }
-a:hover{
+
+a:hover {
   color: rgb(136, 136, 136);
-} 
+}
 
 footer {
   display: flex;
@@ -50,17 +52,18 @@ footer {
   margin-top: 2rem;
 }
 
-footer > img{
+footer>img {
   width: 200px;
   margin: 0;
 }
-footer > p{
+
+footer>p {
   margin: 0;
   padding-top: 0.7rem;
- 
+
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -69,7 +72,7 @@ form{
   margin: 0 auto;
 }
 
-.card{
+.card {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -79,11 +82,11 @@ form{
   border: 0.5px solid rgb(136, 136, 136);
 }
 
-.card:hover{
+.card:hover {
   border: 0.5px solid rgb(206, 217, 142);
 }
 
-.card-grid{
+.card-grid {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
@@ -94,15 +97,16 @@ form{
 }
 
 table {
- border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    display: table;
-    border: 1px solid #ccc;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  border: 1px solid #ccc;
 
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -112,23 +116,26 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.dark{
+.dark {
   background-color: #12121296;
   color: white;
 }
-.dark > a {
+
+.dark>a {
   color: white;
 }
 
-.icon-container{
+.icon-container {
   display: flex;
   gap: 10px;
 }
-.foto{
+
+.foto {
   margin-right: 1030px;
 }
+
 .theme-container.light {
-  background-color: #fff;
+  background-color: #DCDCDC;
   color: #000;
 }
 
@@ -137,7 +144,7 @@ tr:nth-child(even) {
   color: #fff;
 }
 
-.input-field{
+.input-field {
   width: 90%;
 }
 
@@ -145,11 +152,14 @@ tr:nth-child(even) {
   width: 92.5%;
 }
 
-.error-message{
+.error-message {
+  display: flex;
+  justify-content: center;
   color: red;
+  font-weight: bold;
 }
 
-.imagen-card{
+.imagen-card {
   height: 80px;
   width: 80px;
 }
@@ -162,4 +172,23 @@ tr:nth-child(even) {
 .card.dark {
   background-color: darkgrey;
   color: #fff;
+}
+
+.btnDetail {
+  background-color: #fff;
+  border: solid 0.2px #000;
+  border-radius: 2px;
+  color: #000;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.light .navbar {
+  background-color: #D3D3D3;
+  color: #000;
+}
+
+.light .footer {
+  background-color: #D3D3D3;
+  color: #000;
 }

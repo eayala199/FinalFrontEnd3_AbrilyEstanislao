@@ -20,16 +20,12 @@ const Card = ({ name, username, id }) => {
         <h4>{username}</h4>
         <h5>{id}</h5>
       </div>
-      <Link to={`/dentist/${id}`} className="detailsButton">
-        Ver detalles
+      <Link to={`/dentist/${id}`}>
+        <button className="btnDetail">Go to Detail</button>
       </Link>
-      <button onClick={addFav} className="favButton">
-        Add fav
-      </button>
-    </div>
-  );
-};
+      <button onClick={addFav} className="favButton">Add fav</button>
+    </div >
+  )
+}
 
-export default Card;
-
-
+export default Card
