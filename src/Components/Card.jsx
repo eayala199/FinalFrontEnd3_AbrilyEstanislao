@@ -1,6 +1,8 @@
-import React from "react"
+import React, { useContext } from "react";
+import { ThemeContext } from "../Components/ThemeContextProvider";
 
 const Card = ({ name, username, id }) => {
+  const { theme } = useContext(ThemeContext);
 
   const addFav = () => {
     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -12,7 +14,7 @@ const Card = ({ name, username, id }) => {
   return (
     <div className="card">
       <img src="/images/doctor.jpg" alt="foto-dentista" className="imagen-card"/>
-      <div>
+      <div className={`card ${theme}`}>
         <h3>{name}</h3>
         <h4>{username}</h4>
         <h5>{id}</h5>

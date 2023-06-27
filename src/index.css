@@ -150,6 +150,16 @@ tr:nth-child(even) {
 }
 
 .imagen-card{
-  height: 100px;
+  height: 80px;
   width: 80px;
+}
+
+.card {
+  background-color: #fff;
+  color: #000;
+}
+
+.card.dark {
+  background-color: darkgrey;
+  color: #fff;
 }
