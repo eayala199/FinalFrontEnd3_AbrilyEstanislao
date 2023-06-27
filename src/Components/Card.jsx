@@ -21,7 +21,7 @@ const Card = ({ name, username, id }) => {
         <h5>{id}</h5>
       </div>
       <Link to={`/dentist/${id}`}>
-        <button className="btnDetail">Go to Detail</button>
+        <button className="btnThemes">Go to Detail</button>
       </Link>
       <button onClick={addFav} className="favButton">Add fav</button>
     </div >
