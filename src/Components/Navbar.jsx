@@ -16,7 +16,7 @@ const Navbar = () => {
       <nav className={`navbar ${theme}`}>
         
           <Link to="/home">Home</Link>
-          <Link to="/dentist/:id">Dentist</Link>
+          <Link to="/dentist/1">Dentist</Link>
           <Link to="/contacto">Contact</Link>
           <Link to="/favs">Favs</Link>
         <div></div>

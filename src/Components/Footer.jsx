@@ -7,7 +7,7 @@ const Footer = () => {
     <footer>
       
         <p>Powered by</p>
-        <img src="./images/DH.png" alt='DH-logo' className='foto' />
+        <img src="/images/DH.png" alt='DH-logo' className='foto' />
       
       <div className="icon-container">
         <FontAwesomeIcon icon={faSquareFacebook} size="2x" />
