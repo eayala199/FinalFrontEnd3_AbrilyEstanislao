@@ -13,7 +13,7 @@ const Favs = () => {
 
   return (
     <main>
-      <h1>Dentist favs</h1>
+      <h1>Dentists favs</h1>
       <div className="card-grid">
         {uniqueFavorites.map((favorite) => (
           <Card
