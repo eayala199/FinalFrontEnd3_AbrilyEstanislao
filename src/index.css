@@ -76,8 +76,10 @@ form {
   align-items: center;
   width: 205px;
   padding: 0.5rem 0.5rem 0 0.5rem;
-  border: 0.5px solid rgb(136, 136, 136);
+  border: 0.5px solid #88888834;
   text-align: center;
+  border-radius: 5px;
+  color: #5c6670;
 }
 
 .card:hover {
@@ -88,7 +90,7 @@ form {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
-  width: 90vw;
+  width: 80vw;
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -216,5 +218,49 @@ h2 {
 }
 
 .dark .favButton {
+  color: white;
+}
+
+footer>.icon-container {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+footer>.icon-container>.icono {
+  width: 30px;
+  height: 30px;
+}
+
+.dark>footer>.icon-container>img {
+  filter: invert(0);
+}
+
+.light>footer>.icon-container>img {
+  filter: invert(0.9);
+}
+
+.icon-container:hover {
+  cursor: pointer;
+}
+
+.navbar-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.navbar-links li {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.navbar-links li:last-child {
+  margin-right: 0;
+}
+
+.navbar.dark .navbar-links li a {
   color: white;
 }

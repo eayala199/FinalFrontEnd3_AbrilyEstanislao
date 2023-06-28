@@ -10,13 +10,29 @@ const Footer = () => {
     <footer className={`footer ${theme}`}>
 
       <p>Powered by</p>
-      <img src="/images/DH.png" alt='DH-logo' className='foto' />
+      <img src="/images/DH.png" alt='Logo de Digital House' className='foto' />
 
       <div className="icon-container">
-        <FontAwesomeIcon icon={faSquareFacebook} size="2x" />
-        <FontAwesomeIcon icon={faInstagram} size="2x" />
-        <FontAwesomeIcon icon={faWhatsapp} size="2x" />
-        <FontAwesomeIcon icon={faTiktok} size="2x" />
+          <img
+            src="images/ico-facebook.png"
+            alt="Logo facebook"
+            className="icono"
+          />
+          <img
+            src="images/ico-instagram.png"
+            alt="Logo facebook"
+            className="icono"
+          />
+          <img
+            src="images/ico-tiktok.png"
+            alt="Logo facebook"
+            className="icono"
+          />
+          <img
+            src="images/ico-whatsapp.png"
+            alt="Logo facebook"
+            className="icono"
+          />
       </div>
     </footer>
   )
