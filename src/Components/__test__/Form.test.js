@@ -15,8 +15,8 @@ describe('Form', () => {
         fireEvent.change(emailInput, { target: { value: 'estanislao@example' } });
         fireEvent.click(submitButton);
 
-    expect(
-        screen.getByText('Por favor verifique su información nuevamente')
+        expect(
+            screen.getByText('Por favor verifique su información nuevamente')
         ).toBeInTheDocument();
     });
 
@@ -31,9 +31,8 @@ describe('Form', () => {
         fireEvent.change(emailInput, { target: { value: 'abril@ejemplo.com' } });
         fireEvent.click(submitButton);
 
-    expect(
-        screen.getByText('Gracias Abril Gomez, te contactaremos lo antes posible vía email')
+        expect(
+            screen.getByText('Gracias Abril Gomez, te contactaremos lo antes posible vía email')
         ).toBeInTheDocument();
     });
 });
-

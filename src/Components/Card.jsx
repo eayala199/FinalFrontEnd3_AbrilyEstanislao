@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../Components/ThemeContextProvider";
 
@@ -9,7 +9,6 @@ const Card = ({ name, username, id }) => {
     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
     favorites.push({ name, username, id });
     localStorage.setItem("favorites", JSON.stringify(favorites));
-    // Aquí iría la lógica para agregar la Card en el localStorage
   };
 
   return (

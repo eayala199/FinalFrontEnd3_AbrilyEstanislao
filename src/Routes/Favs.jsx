@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useContext } from 'react';
+import { useEffect, useReducer, useContext } from 'react';
 import Card from '../Components/Card';
 import { ThemeContext } from "../Components/ThemeContextProvider";
 
@@ -73,7 +73,3 @@ const Favs = () => {
 };
 
 export default Favs;
-
-
-
-
