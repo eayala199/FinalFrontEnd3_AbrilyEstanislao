@@ -1,26 +1,15 @@
-import React, { useEffect, useState } from 'react'
-import Card from "../Components/Card"
-
-// Este componente deberá ser estilado como "dark" o "light" dependiendo del theme del Context
+import React, { useContext } from 'react';
+import { DataContext } from '../Components/DataContextProvider';
+import Card from '../Components/Card';
 
 const Home = () => {
-  const [dentists, setDentists] = useState([]);
-
-  const getDentists = async() => {
-    const res = await fetch('https://jsonplaceholder.typicode.com/users');
-    const data = await res.json();
-    setDentists(data);
-  };
-
-  useEffect(() => {
-    getDentists();
-  }, []);
+  const { data } = useContext(DataContext);
 
   return (
     <main className="">
       <h1>Home</h1>
       <div className='card-grid'>
-        {dentists.length ? dentists.map(dentist => (
+        {data.length ? data.map(dentist => (
           <Card
             key={dentist.id}
             name={dentist.name}
