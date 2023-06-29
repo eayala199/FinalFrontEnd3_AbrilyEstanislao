@@ -57,7 +57,7 @@ footer>img {
 footer>p {
   margin: 0;
   padding-top: 0.7rem;
-
+  margin-left: 15px;
 }
 
 form {
@@ -65,7 +65,7 @@ form {
   flex-direction: column;
   justify-content: space-around;
   width: 300px;
-  height: 100px;
+  height: 120px;
   margin: 0 auto;
 }
 
@@ -148,7 +148,8 @@ tr:nth-child(even) {
   width: 90%;
 }
 
-.boton {
+.btnForm {
+  margin-left: 32px;
   width: 92.5%;
 }
 
@@ -157,6 +158,8 @@ tr:nth-child(even) {
   justify-content: center;
   color: red;
   font-weight: bold;
+  margin-top: 25px;
+  padding-left: 50px;
 }
 
 .imagen-card {
@@ -172,15 +175,6 @@ tr:nth-child(even) {
 .card.dark {
   background-color: darkgrey;
   color: #fff;
-}
-
-.btnDetail {
-  background-color: #fff;
-  border: solid 0.2px #000;
-  border-radius: 2px;
-  color: #000;
-  cursor: pointer;
-  padding: 10px 20px;
 }
 
 .light .navbar {
@@ -200,7 +194,9 @@ h2 {
 }
 
 .btnThemes,
-.favButton {
+.favButton,
+.btnForm,
+.btnDetail {
   background-color: #c6c6c6;
   border: none;
   border-radius: 5px;
@@ -208,9 +204,15 @@ h2 {
 }
 
 .btnThemes:hover,
-.favButton:hover {
+.favButton:hover,
+.btnForm:hover,
+.btnDetail:hover {
   background-color: #aaaaaa;
   cursor: pointer;
+}
+
+.dark .btnDetail {
+  color: white;
 }
 
 .dark .btnThemes {
@@ -263,4 +265,44 @@ footer>.icon-container>.icono {
 
 .navbar.dark .navbar-links li a {
   color: white;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+  margin: 10px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.btnRemoveFavs.light {
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-top: 10px;
+  width: 120px;
+  height: 20px;
+}
+
+.btnRemoveFavs.dark {
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-top: 10px;
+  width: 120px;
+  height: 20px;
 }

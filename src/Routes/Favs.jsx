@@ -1,5 +1,6 @@
-import React, { useEffect, useReducer } from 'react';
+import React, { useEffect, useReducer, useContext } from 'react';
 import Card from '../Components/Card';
+import { ThemeContext } from "../Components/ThemeContextProvider";
 
 const initialState = {
   favorites: [],
@@ -26,6 +27,7 @@ const reducer = (state, action) => {
 const Favs = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { favorites } = state;
+  const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
     const storedFavorites =
@@ -61,7 +63,8 @@ const Favs = () => {
               username={favorite.username}
               id={favorite.id}
             />
-            <button onClick={() => handleRemoveFavorite(favorite.id)}>Remove Fav</button>
+            <button className={`btnRemoveFavs ${theme}`}
+              onClick={() => handleRemoveFavorite(favorite.id)}>Remove Fav</button>
           </div>
         ))}
       </div>

@@ -44,7 +44,7 @@ const Form = () => {
             className="input-field"
           />
         </div>
-        <input className="boton" type="submit" />
+        <input className="btnForm" type="submit" />
       </form>
       {errorMessage ? <Error message={errorMessage}/> : null }
     </div>
